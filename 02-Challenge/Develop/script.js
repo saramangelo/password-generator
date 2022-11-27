@@ -3,6 +3,7 @@
 // create an empty array that will hold the users selected characters
 
 // var possibleChars = ()
+// var passwordArray = ()
 
 // on game start prompt for users number of character and hold in a variable
 // var numChars = prompt("How many characters would you like in your password?")
@@ -12,6 +13,7 @@
 // write function that validates users input
 
 // function validateUserInput() {
+// parseInt(chars)
 // if (chars < 8 || chars > 128) {
 //  return null
 // }
@@ -40,10 +42,13 @@
 // possibleChars.concat(specialCharsArray)
 //} 
 
+// create a random number
 
+// loop through possibleChars and select a random character from the possibleChars array based on how many characters they entered into the prompt
 
+// push() the randomly generated character to an empty array called passwordArray
 
-
+// return passwordArray.join() <-- takes an array and joins it into a string
 
 
 
