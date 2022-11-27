@@ -56,6 +56,31 @@
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
+var password = "";
+var passwordLength = prompt("How many characters would you like your password to have?");
+if (passwordLength < 8 || passwordLength > 128) {
+  alert("Password must be between 8 and 128 characters.");
+  return;
+}
+var passwordLowerCase = confirm("Would you like to include lowercase letters in your password?");
+var passwordUpperCase = confirm("Would you like to include uppercase letters in your password?");
+var passwordNumbers = confirm("Would you like to include numbers in your password?");
+var passwordSpecialChars = confirm("Would you like to include special characters in your password?");
+var passwordCharacters = "";
+
+if (passwordLowerCase) {
+  passwordCharacters += "abcdefghijklmnopqrstuvwxyz";
+}
+if (passwordUpperCase) {
+  passwordCharacters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+}
+if (passwordNumbers) {
+  passwordCharacters += "0123456789";
+}
+if (passwordSpecialChars) {
+  passwordCharacters += "!"#$%&'()*+,-./:;<=>?@[/]^_`{|}~"
+}
+
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -155,6 +180,8 @@ var symbols = [
   "}",
   "~",
 ];
+
+
 
 //NEW//
 
