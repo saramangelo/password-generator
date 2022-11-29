@@ -168,7 +168,27 @@ function generatePassword() {
   return "this needs to be all variables concatenated"; //  change
 }
 
-// need to 
+// need to utilize variable arrays above
+
+if (upperCaseChoice){
+  // take all upper case letters, add to final array
+}
+
+if (lowerCaseChoice){
+  // take all lower case letters, add to final array
+}
+
+if (specialCharChoice){
+  // take all special characters, add to final array
+}
+
+if (numberChoice){
+  // take all numbers, add to final array
+}
+
+
+
+
 
 function writePassword() {
   var password = generatePassword();
