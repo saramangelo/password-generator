@@ -92,24 +92,14 @@ var specialChar = [
   "~",
 ];
 
-
 var passwordArray = [];
 var password = [];
-
-
-// from office hours notes:
-// var possiblePassword = [];
-// var passwordArray = "";
-// possibleChar = possibleChar.concat(lowerCaseArray);
-// myPassword = [];
-// use concat and use += (see post-it note)
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function generatePassword() {
-  
   // password has to be between 8 and 128 characters, needs prompting if erroneous input
 
   var characterNumberMessage =
@@ -157,47 +147,45 @@ function generatePassword() {
   ) {
     alert("You must have at least one character type");
     return generatePassword();
-  } 
+  }
 
-// need to utilize variable arrays above / validate input
+  // need to utilize variable arrays above / validate input
 
-if (upperCaseChoice){
-passwordArray.concat(upperCase);
-  // take all upper case letters, add to final array
+  if (upperCaseChoice) {
+    passwordArray = passwordArray.concat(upperCase);
+    // take all upper case letters, add to final array
+  }
+
+  if (lowerCaseChoice) {
+    passwordArray = passwordArray.concat(lowerCase);
+    // take all lower case letters, add to final array
+  }
+
+  if (specialCharChoice) {
+    passwordArray = passwordArray.concat(specialChar);
+    // take all special characters, add to final array
+  }
+
+  if (numberChoice) {
+    passwordArray = passwordArray.concat(numbers);
+    // take all numbers, add to final array
+  }
+
+  for (i = 0; i < userInput; i++) {
+    var randomChar =
+      passwordArray[Math.floor(Math.random() * passwordArray.length)];
+    password.push(randomChar);
+  }
+  console.log(password);
+  return password.join("");
 }
-
-if (lowerCaseChoice){
-  passwordArray.concat(lowerCase);
-  // take all lower case letters, add to final array
-}
-
-if (specialCharChoice){
-  passwordArray.concat(specialCharChoice);
-  // take all special characters, add to final array
-}
-
-if (numberChoice){
-  passwordArray.concat(numberChoice);
-  // take all numbers, add to final array
-}
-
-
-for(i = 0; i < userInput; i++){
-  var randomChar = passwordArray[Math.floor(Math.random()*passwordArray.length)];
- password.push(randomChar);
-}
-return password.join("");
-}
-
-
-
 
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
 }
 
 // Add event listener to generate button
+
 generateBtn.addEventListener("click", writePassword);
