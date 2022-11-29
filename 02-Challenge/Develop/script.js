@@ -94,7 +94,7 @@ var specialChar = [
 
 
 var passwordArray = [];
-
+var password = [];
 
 
 // from office hours notes:
@@ -156,67 +156,40 @@ function generatePassword() {
     !numberChoice
   ) {
     alert("You must have at least one character type");
-    var upperCaseChoice = confirm(
-      "Do you want to include an uppercase letter in your password?"
-    );
-
-    var lowerCaseChoice = confirm(
-      "Do you want to include a lowercase letter in your password?"
-    );
-
-    var specialCharChoice = confirm(
-      "Do you want to include a special character in your password?"
-    );
-
-    var numberChoice = confirm(
-      "Do you want to include a number in your password?"
-    );
-  } else {
-    // move to next step
-  }
-  return "this needs to be all variables randomized and concatenated"; //  change
+    return generatePassword();
+  } 
 
 // need to utilize variable arrays above / validate input
 
 if (upperCaseChoice){
-  passwordArray += upperCase;
+passwordArray.concat(upperCase);
   // take all upper case letters, add to final array
 }
 
 if (lowerCaseChoice){
-   passwordArray += lowerCase;
+  passwordArray.concat(lowerCase);
   // take all lower case letters, add to final array
 }
 
 if (specialCharChoice){
-   passwordArray += specialChar;
+  passwordArray.concat(specialCharChoice);
   // take all special characters, add to final array
 }
 
 if (numberChoice){
-   passwordArray += numbers;
+  passwordArray.concat(numberChoice);
   // take all numbers, add to final array
 }
 
-for(i = 0; i < upperCase.length; i++){
-  upperCase[Math.floor(Math.random()*upperCase.length)];
-  console.log(upperCaseChoice);
+
+for(i = 0; i < userInput; i++){
+  var randomChar = passwordArray[Math.floor(Math.random()*passwordArray.length)];
+ password.push(randomChar);
 }
-for(i = 0; i < lowerCase.length; i++){
-  lowerCase[Math.floor(Math.random()*lowerCase.length)];
-  console.log(lowerCase);
-}
-for(i = 0; i < specialChar.length; i++){
-  specialChar[Math.floor(Math.random()*specialChar.length)];
-  console.log(specialChar);
-}
-for(i = 0; i < numbers.length; i++){
-  numbers[Math.floor(Math.random()*numbers.length)];
-  
-  console.log(numbers);
+return password.join("");
 }
 
-}
+
 
 
 function writePassword() {
