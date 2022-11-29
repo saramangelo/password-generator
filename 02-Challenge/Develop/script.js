@@ -116,7 +116,6 @@ function generatePassword() {
     userInput = prompt(characterNumberMessage);
   }
 
-  console.log(userInput);
   // user is presented with question - do you want to include 1. uppercase? 2. lowercase? 3. number? 4. special character?
   // user selects which criteria to include
 
@@ -134,10 +133,6 @@ function generatePassword() {
   var specialCharChoice = confirm(
     "Do you want to include a special character in your password?"
   );
-  // console.log(upperCaseChoice);
-  // console.log(lowerCaseChoice);
-  // console.log(numberChoice);
-  // console.log(specialCharChoice);
 
   if (
     !upperCaseChoice &&
@@ -176,7 +171,6 @@ function generatePassword() {
       passwordArray[Math.floor(Math.random() * passwordArray.length)];
     password.push(randomChar);
   }
-  // console.log(password);
   return password.join("");
 }
 

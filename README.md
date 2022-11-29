@@ -2,16 +2,16 @@
 
 ## Description
 
-This password generator was originally derived from starter code with provided HTML and CSS files. 
+This password generator was originally derived from starter code with provided HyperText Markup Language (HTML) and Cascading Style Sheets (CSS) files. In 
 
 ## Screenshot
 
-![portfolio-ss.png](./assets/portfolio-ss.png)
+![password-gen-ss.png](./02-Challenge/Assets/password-gen-ss.png)
 
 
 ## Link to webpage:
 
-https://saramangelo.github.io/professional-portfolio/
+https://saramangelo.github.io/password-generator/
 
 ## License
 
