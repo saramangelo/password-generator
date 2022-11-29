@@ -93,6 +93,8 @@ var symbols = [
   "~",
 ];
 
+var passwordArray = [];
+
 // from office hours notes:
 // var possiblePassword = [];
 // var passwordArray = "";
@@ -168,23 +170,24 @@ function generatePassword() {
   return "this needs to be all variables concatenated"; //  change
 }
 
-// need to utilize variable arrays above
+// need to utilize variable arrays above / validate input
 
-if (upperCaseChoice){
-  // take all upper case letters, add to final array
-}
+// if (upperCaseChoice){
+//   passwordArray
+//   // take all upper case letters, add to final array
+// }
 
-if (lowerCaseChoice){
-  // take all lower case letters, add to final array
-}
+// if (lowerCaseChoice){
+//   // take all lower case letters, add to final array
+// }
 
-if (specialCharChoice){
-  // take all special characters, add to final array
-}
+// if (specialCharChoice){
+//   // take all special characters, add to final array
+// }
 
-if (numberChoice){
-  // take all numbers, add to final array
-}
+// if (numberChoice){
+//   // take all numbers, add to final array
+// }
 
 
 
