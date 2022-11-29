@@ -134,10 +134,10 @@ function generatePassword() {
   var specialCharChoice = confirm(
     "Do you want to include a special character in your password?"
   );
-  console.log(upperCaseChoice);
-  console.log(lowerCaseChoice);
-  console.log(numberChoice);
-  console.log(specialCharChoice);
+  // console.log(upperCaseChoice);
+  // console.log(lowerCaseChoice);
+  // console.log(numberChoice);
+  // console.log(specialCharChoice);
 
   if (
     !upperCaseChoice &&
@@ -176,7 +176,7 @@ function generatePassword() {
       passwordArray[Math.floor(Math.random() * passwordArray.length)];
     password.push(randomChar);
   }
-  console.log(password);
+  // console.log(password);
   return password.join("");
 }
 
