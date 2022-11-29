@@ -2,12 +2,11 @@
 
 ## Description
 
-This password generator was originally derived from starter code with provided HyperText Markup Language (HTML) and Cascading Style Sheets (CSS) files. In 
+This password generator was originally derived from starter code with provided HyperText Markup Language (HTML) and Cascading Style Sheets (CSS) files. In the webpage, when the user clicks the button, "Generate Password," the user is presented with a series of prompts, asking them to enter the number of characters they would like their password to be (between 8-128), and if they would like to include uppercase, lowercase, numbers and/or special characters. When the user answers each prompt, the information is saved, validated, then rendered on the screen, displaying a generated password, that matches the user's selected criteria.
 
 ## Screenshot
 
 ![password-gen-ss.png](./02-Challenge/Assets/password-gen-ss.png)
-
 
 ## Link to webpage:
 
