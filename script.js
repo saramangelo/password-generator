@@ -140,7 +140,7 @@ function generatePassword() {
     !specialCharChoice &&
     !numberChoice
   ) {
-    alert("You must have at least one character type");
+    alert("You must have at least one character type. Please try again.");
     return generatePassword();
   }
 
