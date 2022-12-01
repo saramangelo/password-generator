@@ -1,4 +1,4 @@
-var upperCase = [
+var upperCase = [ 
   "A",
   "B",
   "C",
@@ -106,6 +106,8 @@ function generatePassword() {
     "Enter the number of characters you would like your password to be. Must be between 8 and 128 characters.";
 
   var userInput = prompt(characterNumberMessage);
+
+  // include logic to make sure user input is between 8-128 numerical characters
 
   while (
     (userInput !== null && isNaN(userInput)) ||
